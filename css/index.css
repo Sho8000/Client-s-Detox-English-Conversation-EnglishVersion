@@ -1,0 +1,946 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fefefd;
+  font-family: "Noto Sans JP", sans-serif;
+}
+body h1 {
+  font-size: 48px;
+}
+body h2 {
+  font-size: 40px;
+}
+body h3 {
+  font-size: 32px;
+}
+body h4 {
+  font-size: 28px;
+}
+body .font_p_xl {
+  font-size: 24px;
+}
+body .font_p_L {
+  font-size: 20px;
+}
+body .font_p_m {
+  font-size: 16px;
+}
+body .font_p_s {
+  font-size: 12px;
+}
+body .font_p_ss {
+  font-size: 10px;
+}
+body .fontWaitBold {
+  font-weight: 700;
+}
+body .fontWaitBoldNormal {
+  font-weight: 400;
+}
+body .coursePeriodColorB {
+  background-color: #1A7692;
+}
+body .coursePeriodColorG {
+  background-color: #248F5A;
+}
+body .coursePeriodColorR {
+  background-color: #B53A13;
+}
+body .coursePeriodColorY {
+  background-color: #A37C21;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 140px;
+}
+
+.hide {
+  display: none;
+}
+
+.youtubeLink {
+  height: 100px;
+  text-align: center;
+  place-content: center;
+}
+.youtubeLink .youtubeBtn {
+  background-color: #FD1513;
+  color: #fcfcfc;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  padding: 0 1.5rem;
+}
+
+.indexPage main #heroSection {
+  height: 560px !important;
+}
+.indexPage main #heroSection .IndexPage__hero .IndexPage__hero__container {
+  width: 80%;
+  margin: auto;
+  place-content: left;
+}
+.indexPage main #heroSection .IndexPage__hero .IndexPage__hero__container .hero__title {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+.indexPage main #heroSection .IndexPage__hero .IndexPage__hero__container .hero__comment {
+  color: #fcfcfc;
+}
+.indexPage main #heroSection .IndexPage__hero .LineLink {
+  width: 80%;
+  margin: auto;
+}
+.indexPage main #heroSection .IndexPage__hero .LineLink .lineBtn {
+  width: 142px;
+  line-height: 45px;
+  border-radius: 5px;
+  background-color: #00B800;
+  color: #fcfcfc;
+  border: none;
+  margin: auto;
+}
+
+#app #header {
+  width: 100%;
+  height: 125px;
+  position: fixed;
+  z-index: 999;
+  padding-top: 15px;
+  background-color: #fefefd;
+  border-bottom: 2px #ACAAA5 solid;
+}
+@media only screen and (max-width: 425px) {
+  #app #header {
+    width: 100% !important;
+  }
+}
+#app #header a {
+  color: black;
+}
+#app #header a:visited {
+  color: black;
+}
+#app #header .header__icons__area {
+  width: 90%;
+  margin: 0 auto 24px;
+}
+#app #header .header__icons__area .header__icons {
+  display: flex;
+  justify-content: right;
+  gap: 15px;
+}
+#app #header .header__nav__PC {
+  width: 90%;
+  height: 45px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+#app #header .header__nav__PC img {
+  position: absolute;
+  top: 0%;
+  transform: translateY(-50%);
+}
+#app #header .header__nav__PC .header__ulContainer .header__ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 24px;
+}
+#app #header .header__nav__PC .header__ulContainer .header__ul .header__li a {
+  color: black;
+}
+#app #header .header__nav__PC .header__ulContainer .header__ul .header__li__LINE {
+  width: 142px;
+  line-height: 100%;
+  border-radius: 5px;
+  background-color: #00B800;
+  color: #fcfcfc;
+  border: none;
+  margin: auto;
+}
+#app #header .header__nav__PC .header__ulContainerHBG {
+  background-color: #fefefd;
+  border: 1px black solid;
+  border-radius: 5px;
+  position: absolute;
+  left: 100%;
+  top: 100%;
+  transform: translateX(-100%);
+}
+#app #header .header__nav__PC .header__ulContainerHBG .header__ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0 1rem;
+  gap: 24px;
+}
+#app #header .header__nav__PC .header__ulContainerHBG .header__ul .header__li a {
+  color: black;
+}
+#app #header .header__nav__PC .header__ulContainerHBG .header__ul .header__li__LINE {
+  width: 142px;
+  line-height: 100%;
+  border-radius: 5px;
+  background-color: #00B800;
+  color: #fcfcfc;
+  border: none;
+  margin: auto;
+}
+#app #header .hamburgerSVG {
+  display: none;
+}
+@media only screen and (max-width: 815px) {
+  #app #header .header__ulContainer {
+    display: none;
+  }
+  #app #header .hamburgerSVG {
+    display: block;
+  }
+}
+#app html,
+#app body {
+  position: relative;
+  height: 100%;
+}
+#app body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+#app swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+#app swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 560px;
+  height: 300px;
+  position: relative;
+}
+#app swiper-slide img {
+  display: block;
+  width: 100%;
+}
+#app main #heroSection {
+  width: 100%;
+  height: 210px;
+}
+#app main #heroSection .hero {
+  width: 100%;
+  height: 100%;
+  place-content: center;
+  background-size: cover;
+  background-position: 50%, 50%;
+}
+#app main #heroSection .hero .hero__title {
+  width: fit-content;
+  color: #fcfcfc;
+  text-align: center;
+  margin: 0;
+}
+#app main #heroSection .hero .hero__comment {
+  margin: 1rem 0;
+}
+#app main #heroSection .hero .LineLink {
+  margin-top: 40px;
+}
+#app main #heroSection .heroSub {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app main #heroSection .heroSub img {
+  height: 75px;
+  padding-left: 10px;
+}
+#app main #indexPage__contents {
+  width: 100%;
+}
+#app main #indexPage__contents .indexPage__container .indexPage__items {
+  min-height: 450px;
+}
+#app main #indexPage__contents .indexPage__container .Youtube {
+  min-height: 550px;
+}
+#app main #indexPage__contents .indexPage__container .Maincomment {
+  display: flex;
+  background-image: url(../resource/banana-background.png);
+  background-size: contain;
+}
+#app main #indexPage__contents .indexPage__container .Maincomment .comments {
+  position: relative;
+  margin-top: 2rem;
+  margin-left: 10rem;
+}
+#app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  z-index: 2;
+  transform: translateY(-75%);
+}
+#app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment img {
+  width: 690px;
+}
+#app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment .buchakePhone {
+  display: none;
+}
+#app main #indexPage__contents .indexPage__container .Maincomment .comments .lineBtn {
+  position: absolute;
+  z-index: 2;
+  bottom: 40px;
+  width: 142px;
+  line-height: 45px;
+  border-radius: 5px;
+  background-color: #00B800;
+  color: #fcfcfc;
+  border: none;
+  margin: auto 0;
+}
+#app main #indexPage__contents .indexPage__container .Maincomment .comments .lineBtn p {
+  margin: 0;
+}
+#app main #indexPage__contents .indexPage__container .Maincomment .mainPic {
+  position: relative;
+  width: 100%;
+  height: 600px;
+}
+#app main #indexPage__contents .indexPage__container .Maincomment .mainPic img {
+  position: absolute;
+  width: 600px;
+  right: 0;
+}
+#app main #indexPage__contents .indexPage__container .Course {
+  display: flex;
+  flex-direction: column;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer {
+  width: 80%;
+  height: auto;
+  margin: 2rem auto;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseTitle {
+  text-align: center;
+  margin-bottom: 60px;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard {
+  width: 300px;
+  height: 320px;
+  background-color: #FCFCFC;
+  border-radius: 10px;
+  position: relative;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .cTitle {
+  text-align: center;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .cPeriod {
+  width: fit-content;
+  margin: auto;
+  padding: 0 1.5rem;
+  color: #fcfcfc;
+  border-radius: 15px;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .cPeriod .font_p_m {
+  margin: auto;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .cExp .list {
+  padding-left: 16px;
+  list-style: none;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .cExp .list li:before {
+  content: "•";
+  padding: 0 5px;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .cComment {
+  padding: 1rem;
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .Banana {
+  position: absolute;
+  top: -5%;
+  left: -15%;
+  transform: rotate(-10deg);
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .courseContainerReadMore {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 100%;
+  transform: translateX(-100%);
+}
+#app main #indexPage__contents .indexPage__container .SubcommentThoughtness {
+  place-content: center;
+}
+#app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin: auto;
+}
+#app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer .comments {
+  width: 568px;
+}
+#app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer .images {
+  position: relative;
+}
+#app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer .images .subImg {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 60%;
+  left: 95%;
+  mix-blend-mode: darken;
+}
+#app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer .SubcommentTReadMore {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 0;
+}
+#app main #indexPage__contents .indexPage__container .Subcomment {
+  place-content: center;
+}
+#app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer {
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  margin: auto;
+}
+#app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer .comments {
+  align-self: flex-start;
+}
+#app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer .images {
+  width: 456px;
+  order: -1;
+  position: relative;
+}
+#app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer .images .img {
+  width: 100%;
+}
+#app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer .images .subImg {
+  position: absolute;
+  top: -17%;
+  mix-blend-mode: darken;
+}
+#app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer .SubcommentCReadMore {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 0;
+}
+#app main #indexPage__contents .indexPage__container .voiceContainer {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+}
+#app main #indexPage__contents .indexPage__container .voiceContainer .titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#app main #indexPage__contents .indexPage__container .voiceContainer .titleContainer img {
+  height: 50px;
+  margin-left: 1rem;
+}
+#app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 65px;
+}
+#app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer .voiceCard {
+  width: 560px;
+  height: auto;
+}
+#app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer .voiceCard p {
+  text-align: center;
+  margin: auto;
+}
+#app main #indexPage__contents .indexPage__container .voiceContainer .voiceCReadMore {
+  margin-top: 48px;
+  margin-bottom: 48px;
+  margin-left: 100%;
+  transform: translateX(-100%);
+}
+#app main #indexPage__contents .odd {
+  background-color: #F2F0E9;
+}
+#app main .readMore {
+  width: 308px;
+  height: 62px;
+  text-align: right;
+  margin: auto;
+}
+#app main .readMore button {
+  width: 100%;
+  font-family: "Noto Sans JP", sans-serif;
+}
+@media only screen and (max-width: 835px) {
+  #app main .readMore {
+    width: 185px;
+    height: 62px;
+    text-align: right;
+    margin: auto;
+  }
+  #app main .readMore button {
+    width: 100%;
+    font-family: "Noto Sans JP", sans-serif;
+  }
+}
+@media only screen and (max-width: 835px) {
+  #app main #heroSection .heroMain {
+    background-position: 70%, 50%;
+  }
+  #app main #heroSection .heroMain .hero__title {
+    font-size: 36px;
+  }
+  #app main #heroSection .heroMain .hero__comment {
+    font-size: 18px;
+  }
+  #app main #heroSection .heroSub h1 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #app main #heroSection .heroMain {
+    background-position: 70%, 50%;
+  }
+  #app main #heroSection .heroMain .hero__title {
+    font-size: 24px;
+  }
+  #app main #heroSection .heroMain .hero__comment {
+    font-size: 16px;
+  }
+  #app main #heroSection .heroSub h1 {
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 1249px) {
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments {
+    margin-left: 4rem;
+  }
+}
+@media only screen and (max-width: 1149px) {
+  #app main #indexPage__contents .indexPage__container .Maincomment {
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments {
+    position: relative;
+    order: 1;
+    margin-top: 2rem;
+    margin-left: 5rem;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment {
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment img {
+    width: 420px;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment .buchakePC {
+    display: none;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment .buchakePhone {
+    display: block;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments .lineBtn {
+    position: absolute;
+    z-index: 2;
+    bottom: -200px;
+    width: 142px;
+    line-height: 45px;
+    border-radius: 5px;
+    background-color: #00B800;
+    color: #fcfcfc;
+    border: none;
+    margin: auto 0;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .mainPic {
+    position: static;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .mainPic img {
+    position: static;
+    width: 600px;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #app main #indexPage__contents .indexPage__container .Maincomment {
+    display: flex;
+    flex-direction: column;
+    height: 830px;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    order: 1;
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment {
+    position: absolute;
+    z-index: 2;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments .mainComment img {
+    width: 310px;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .comments .lineBtn {
+    position: absolute;
+    z-index: 2;
+    bottom: 10%;
+    left: 5%;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .mainPic {
+    position: static;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+  }
+  #app main #indexPage__contents .indexPage__container .Maincomment .mainPic img {
+    position: static;
+    width: 300px;
+    right: 0;
+  }
+}
+@media only screen and (max-width: 1249px) {
+  #app main #indexPage__contents .indexPage__container .Course {
+    width: 100%;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer {
+    width: auto;
+    margin: 2rem auto;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseTitle {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer {
+    width: 100vw;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 40px;
+    row-gap: 30px;
+    margin: 0 4rem;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard {
+    width: 300px;
+    height: 320px;
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    position: relative;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .courseContainerReadMore {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    margin-left: 94%;
+    transform: translateX(-100%);
+  }
+}
+@media only screen and (max-width: 1129px) {
+  #app main #indexPage__contents .indexPage__container .Course {
+    width: 100%;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer {
+    width: auto;
+    margin: 2rem auto;
+    overflow: hidden;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseTitle {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer {
+    width: 100vw;
+    overflow-x: auto;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList {
+    width: 900px;
+    padding-top: 30px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    column-gap: 40px;
+    row-gap: 30px;
+    margin: 0 4rem;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard {
+    min-width: 300px;
+    height: auto;
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    position: relative;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .courseContainerReadMore {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    margin-left: 94%;
+    transform: translateX(-100%);
+  }
+}
+@media only screen and (max-width: 424px) {
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseList .courseCard {
+    width: 240px;
+    height: 360px;
+    background-color: #FCFCFC;
+    border-radius: 10px;
+    position: relative;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseList .courseCard .cTitle {
+    width: 100%;
+    text-align: center;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseList .courseCard .cPeriod {
+    width: fit-content;
+    margin: auto;
+    padding: 0 1.5rem;
+    color: #fcfcfc;
+    border-radius: 15px;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseList .courseCard .cPeriod .font_p_m {
+    margin: auto;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseList .courseCard .cExp .list {
+    padding-left: 25px;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseList .courseCard .cComment {
+    padding: 1rem;
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseList .courseCard .Banana {
+    position: absolute;
+    top: -5%;
+    left: -15%;
+    transform: rotate(-10deg);
+  }
+  #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseReadMore {
+    text-align: right;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #app main #indexPage__contents .indexPage__container .SubcommentThoughtness {
+    padding-bottom: 2rem;
+  }
+  #app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+  }
+  #app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer .images {
+    order: -1;
+    width: 100%;
+    margin: 60px auto 0;
+    position: relative;
+  }
+  #app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer .images img {
+    width: 100%;
+  }
+  #app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer .images .subImg {
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    transform: translate(-60%, -40%);
+    mix-blend-mode: darken;
+  }
+  #app main #indexPage__contents .indexPage__container .SubcommentThoughtness .SubcommentThoughtnessContainer .comments {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  #app main #indexPage__contents .indexPage__container .Subcomment {
+    padding-bottom: 2rem;
+  }
+  #app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    gap: 10px;
+  }
+  #app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer .images {
+    order: -1;
+    width: 100%;
+    margin: 60px auto 0;
+    position: relative;
+  }
+  #app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer .images img {
+    width: 100%;
+  }
+  #app main #indexPage__contents .indexPage__container .Subcomment .SubcommentContainer .images .subImg {
+    position: absolute;
+    top: 0%;
+    transform: translate(50%, -90%);
+  }
+}
+@media only screen and (max-width: 1290px) {
+  #app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 65px;
+  }
+  #app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer .voiceCard {
+    width: 560px;
+    height: auto;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 675px) {
+  #app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer {
+    row-gap: 45px;
+  }
+  #app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer .voiceCard {
+    width: auto;
+    justify-items: center;
+  }
+  #app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer .voiceCard p {
+    text-align: center;
+    margin: auto;
+  }
+  #app main #indexPage__contents .indexPage__container .voiceContainer .cardContainer .voiceCard iframe {
+    width: 300px;
+    height: auto;
+    margin: auto;
+  }
+  #app main #indexPage__contents .indexPage__container .voiceContainer .readMore {
+    margin-top: 48px;
+    margin-bottom: 48px;
+    margin-left: 100%;
+    transform: translateX(-100%);
+  }
+}
+@media only screen and (max-width: 659px) {
+  #app swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: auto;
+    position: relative;
+  }
+  #app swiper-slide iframe {
+    width: 300px;
+    height: auto;
+  }
+  #app swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  #app .Youtube {
+    min-height: 370px !important;
+  }
+}
+#app #footer {
+  width: 100%;
+  height: 140px;
+  background-color: #0095A7;
+  color: #fcfcfc;
+  place-content: center;
+}
+#app #footer a {
+  color: #fcfcfc;
+}
+#app #footer a:visited {
+  color: #fcfcfc;
+}
+#app #footer .footer__container {
+  width: 90%;
+  height: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+#app #footer .footer__container .footer__ulContainer .footer__ul {
+  list-style: none;
+  display: flex;
+  gap: 56px;
+  padding: 0 1rem;
+}
+#app #footer .footer__container .footer__ulContainer .footer__ul .footer__li a {
+  color: #fcfcfc;
+}
+#app #footer .footer__container .footer__icons {
+  display: flex;
+  gap: 15px;
+}
+@media only screen and (max-width: 899px) {
+  #app #footer .footer__container {
+    width: 90%;
+    height: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+  }
+  #app #footer .footer__container .footer__ulContainer .footer__ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 1rem;
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 549px) {
+  #app #footer {
+    height: 440px;
+  }
+  #app #footer .footer__container {
+    width: 90%;
+    height: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  #app #footer .footer__container .footer__ulContainer .footer__ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 30px;
+    margin: 1rem 0 2rem 0;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */

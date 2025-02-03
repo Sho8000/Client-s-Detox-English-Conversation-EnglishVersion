@@ -1,0 +1,304 @@
+#Menu{
+  .hide{
+    display: none !important;
+  }
+  width: 100vw;
+  min-height: 100vh;
+  background-image: url(../resource/banana-background.png);
+  background-size: contain;
+  padding: 4rem 0;
+  .Menu__mainCouse{
+    width: 85%;
+    margin: auto;
+    .Menu__mainCouse__card{
+      display: grid;
+      width: 100%;
+      margin: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "title title"
+      "img exp"
+      "course course"
+      "notice notice"
+      "showMore showMore"
+      ;
+      gap: 1rem;
+      border: 1px solid #DCDAD4;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);
+      background-color: #fefefd;
+      .Menu__mainCouse__card__title{
+        grid-area: title;
+        height: 65px;
+        text-align: center;
+        background-color: #DCDAD4;
+        place-content: center;
+        margin-bottom: 2rem;
+        .font_p_xl{
+          margin: auto;
+        }
+      }
+      .Menu__mainCouse__card__img{
+        grid-area: img;
+        text-align: center;
+        img{
+          width: 90%;
+          border-radius: 5px;
+        }
+      }
+      .Menu__mainCouse__card__explain{
+        grid-area: exp;
+        width: 90%;
+        .font_p_m{
+          margin: auto;
+        }
+      }
+      .Menu__mainCouse__card__courseCardContainer{
+        width: 90%;
+        grid-area: course;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        row-gap: 3rem;
+        margin: 3rem auto 1rem;
+        .Menu__mainCouse__card__courseCard{
+          width: 300px;
+          height: 320px;
+          border: 1px solid #DCDAD4;
+          border-radius: 10px;
+          .talkingBNN{
+            position: relative;
+            height: 65px;
+            img{
+              position: absolute;
+              top: -60%;
+              left: -12%;
+              transform: rotate(-9deg);  
+            }
+          }
+          .Mtitle{
+            text-align: center;
+          }
+          .Mperiod{
+            width: fit-content;
+            height: 40px;
+            padding: 0 1rem;
+            margin: auto;
+            border-radius: 20px;
+            color: #fcfcfc;
+            p{
+              transform: translateY(8px);
+            }
+          }
+          .McouseExp{
+            .McouseExp__ul{
+              padding: 0px;
+              li{
+                padding-left: 16px;
+                list-style: none;
+              }
+              li:before{
+                content: "•";
+                padding: 0 5px;
+              }                  
+            }
+          }
+          .Mcomment{
+            padding-top: 10px;
+            padding-left: 16px;
+          }
+        }
+      }
+      .Menu__mainCouse__card__notice{
+        width: 90%;
+        grid-area: notice;
+        text-align: center;
+        margin: auto;
+        .font_p_m{
+          color: red;
+        }
+      }
+      .Menu__mainCouse__card__showMore{
+        grid-area: showMore;
+        display: inline-block;
+        width: 80%;
+        height: 60px;
+        margin: 0 auto 2rem;
+        text-align: center;
+        background-color: #DCDAD4;
+        .showMoreBtn{
+          width: 100%;
+          height: 100%;
+          background-color: transparent;
+          border: none;
+          font-family: 'Noto Sans JP', sans-serif;
+          .font_p_L{
+            margin: auto;
+          }
+        }
+      }
+    }
+  }
+  .Menu__subCourse{
+    width: 85%;
+    margin: auto;
+    .Menu__subCouse__card{
+      display: grid;
+      width: 100%;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas: 
+      "title title"
+      "img period"
+      "img exp"
+      "img comment"
+      ;
+      border: 1px solid #DCDAD4;
+      box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);
+      background-color: #fefefd;
+      margin: 3rem auto;
+      .Menu__subCouse__card__title{
+        grid-area: title;
+        height: 65px;
+        background-color: #DCDAD4;
+        place-content: center;
+        padding-left: 2rem;
+        margin-bottom: 2rem;
+        .font_p_xl{
+          margin: auto;
+        }
+      }
+      .Menu__subCouse__card__img{
+        grid-area: img;
+        justify-self: center;
+        width: 90%;
+        position: relative;
+        margin-bottom: 2rem;
+        img{
+          width: 100%;
+          border-radius: 5px;
+        }
+        :nth-child(2){
+          position: absolute;
+          top: 20%;
+          left: 40%;
+        }
+      }
+      .Menu__subCouse__card__period{
+        .Speriod{
+          width: fit-content;
+          border-radius: 15px;
+          padding: 0 1.5rem;
+          .font_p_L{
+            color: #fcfcfc;
+            margin: 0 auto 1rem;
+          }
+        }
+      }
+      .Menu__subCouse__card__Exp{
+        .SExp{
+          display: flex;
+          img{display: inline;}
+          p{
+            display: inline;
+            margin: 0;
+          }
+        }
+      }
+      .Menu__subCouse__card__comment{
+        grid-area: comment;
+        width: 90%;
+        min-height: 230px;
+      }
+    }
+  } 
+
+  @media only screen and (max-width:789px){
+    .Menu__mainCouse{
+      .Menu__mainCouse__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        
+        .Menu__mainCouse__card__title{
+          width: 100%;
+        }
+        .Menu__mainCouse__card__courseCardContainer{
+          width: 90%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          column-gap: 3rem;
+          row-gap: 3rem;
+          margin: 3rem auto 1rem;
+        }
+      }
+    }  
+    .Menu__subCourse{
+      margin: auto;
+      .Menu__subCouse__card{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        .Menu__subCouse__card__title{
+          width: 100%;
+          height: 65px;
+          background-color: #DCDAD4;
+          place-content: center;
+          padding-left: 0;
+          margin-bottom: 0;
+          .font_p_xl{
+            padding-left: 2rem;
+            margin: auto;
+          }
+        }
+        .Menu__subCouse__card__img{
+          grid-area: img;
+          justify-self: center;
+          width: calc(100% - 80px);
+          padding: 40px 40px 0 40px;
+          position: relative;
+          margin-bottom: 2rem;
+          img{
+            width: 100%;
+            border-radius: 5px;
+          }
+          :nth-child(2){
+            position: absolute;
+            top: 30%;
+            left: 70%;
+            width: 50px;
+          }
+        }
+        .Menu__subCouse__card__period{
+          .Speriod{
+            width: fit-content;
+            border-radius: 15px;
+            padding: 0 1.5rem;
+            .font_p_L{
+              color: #fcfcfc;
+              margin: 0 auto 24px;
+            }
+          }
+        }
+        .Menu__subCouse__card__Exp{
+          width: calc(100% - 80px);
+          .SExp{
+            img{
+              width: 24px;
+              height: 24px;
+              display: inline;
+            }
+          }
+        }
+        .Menu__subCouse__card__comment{
+          width: calc(100% - 80px);
+          min-height: 0;
+          padding: 16px 0 40px 0;
+          p{margin: 0;}
+        }  
+      }
+    } 
+  }
+}

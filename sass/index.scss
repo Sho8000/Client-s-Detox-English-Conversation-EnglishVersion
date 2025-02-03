@@ -1,0 +1,1071 @@
+// Commonpart CSS
+// body offset, header, footer, hero section
+$HeaderBG:#fefefd;
+$LineBG:#00B800;
+$FooterBG:#0095A7;
+$FontFamily: 'Noto Sans JP', sans-serif;
+$font_h1: 48px;
+$font_h2: 40px;
+$font_h3: 32px;
+$font_h4: 28px;
+$font_p_xl: 24px;
+$font_p_L: 20px;
+$font_p_m: 16px;
+$font_p_s: 12px;
+$font_p_ss: 10px;
+$fontWaitBold: 700;
+$fontWaitBoldNormal: 400;
+$coursePeriodColorB: #1A7692;
+$coursePeriodColorG: #248F5A;
+$coursePeriodColorR: #B53A13;
+$coursePeriodColorY: #A37C21;
+$headerUnderline: #ACAAA5;
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fefefd;
+  font-family: $FontFamily;
+  h1{font-size: $font_h1;}
+  h2{font-size: $font_h2;}
+  h3{font-size: $font_h3;}
+  h4{font-size: $font_h4;}
+  .font_p_xl{font-size: $font_p_xl;}
+  .font_p_L{font-size: $font_p_L;}
+  .font_p_m{font-size: $font_p_m;}
+  .font_p_s{font-size: $font_p_s;}
+  .font_p_ss{font-size: $font_p_ss;}
+  .fontWaitBold{font-weight: $fontWaitBold;}
+  .fontWaitBoldNormal{font-weight: $fontWaitBoldNormal;}
+  .coursePeriodColorB{background-color: $coursePeriodColorB;}
+  .coursePeriodColorG{background-color: $coursePeriodColorG;}
+  .coursePeriodColorR{background-color: $coursePeriodColorR;}
+  .coursePeriodColorY{background-color: $coursePeriodColorY;}
+}
+
+a{
+  text-decoration: none;
+}
+
+
+main{
+  padding-top: 140px;
+}
+
+.hide{
+  display: none;
+}
+
+.youtubeLink{
+  height: 100px;
+  text-align: center;
+  place-content: center;
+  .youtubeBtn{
+    background-color: #FD1513;
+    color: #fcfcfc;
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    padding: 0 1.5rem;
+  }
+}
+
+//////IndexHero Height////////////
+.indexPage{
+  main{
+    #heroSection{
+      height: 560px !important;
+      .IndexPage__hero{
+        .IndexPage__hero__container{
+          width: 80%;
+          margin: auto;
+          place-content: left;
+          .hero__title{
+            text-align: left !important;
+            margin-left: 0 !important;
+          }
+          .hero__comment{
+            color: #fcfcfc;
+          }
+        }
+        .LineLink{
+          width: 80%;
+          margin: auto;
+          .lineBtn{
+            width: 142px;
+            line-height: 45px;
+            border-radius: 5px;
+            background-color: $LineBG;
+            color: #fcfcfc;
+            border: none;
+            margin: auto;
+          }
+        }  
+      }
+    }
+  }
+}
+
+#app{
+/////Header//////////
+  #header{
+    @media only screen and (max-width:425px){
+      width: 100% !important;      
+    }
+
+    a{
+      color: black;
+    }
+    a:visited{
+      color: black;
+    }
+
+    width: 100%;
+    height: 125px;
+    position: fixed;
+    z-index: 999;
+    padding-top: 15px;
+    background-color: $HeaderBG;
+    border-bottom: 2px $headerUnderline solid;
+
+    .header__icons__area{
+      width: 90%;
+      margin: 0 auto 24px;
+      .header__icons{
+        display: flex;
+        justify-content: right;
+        gap: 15px;
+      }
+    }
+  
+    .header__nav__PC{
+      width: 90%;
+      height: 45px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+      img{
+        position: absolute;
+        top: 0%;
+        transform: translateY(-50%);
+      }
+      .header__ulContainer{
+        .header__ul{
+          display: flex;
+          align-items: center;
+          list-style: none;
+          gap: 24px;
+          .header__li{
+            a{
+              color: black;
+            }
+          }
+          .header__li__LINE{
+            width: 142px;
+            line-height: 100%;
+            border-radius: 5px;
+            background-color: $LineBG;
+            color: #fcfcfc;
+            border: none;
+  
+            margin: auto;
+          }
+        }
+      }
+      .header__ulContainerHBG{
+        background-color: #fefefd;
+        border: 1px black solid;
+        border-radius: 5px;
+        position: absolute;
+        left: 100%;
+        top: 100%;
+        transform: translateX(-100%);
+        .header__ul{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          list-style: none;
+          padding: 0 1rem;
+          gap: 24px;
+          .header__li{
+            a{
+              color: black;
+            }
+          }
+          .header__li__LINE{
+            width: 142px;
+            line-height: 100%;
+            border-radius: 5px;
+            background-color: $LineBG;
+            color: #fcfcfc;
+            border: none;
+            margin: auto;
+          }
+        }
+      }
+    }
+    .hamburgerSVG{
+      display: none;
+    }
+
+    //header Responsive
+    @media only screen and (max-width:815px){
+      .header__ulContainer{
+        display: none;
+      }
+      .hamburgerSVG{
+        display: block;
+      }        
+    }
+  }
+
+  //Index swiper part
+
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 560px;
+    height: 300px;
+    position: relative;
+    //because using Youtube page
+    //can't swipe on the video
+    //so added transparent box to
+    //add the swipe function on video
+  }
+
+  swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+
+  //Index main part
+  main{
+    #heroSection{
+      width: 100%;
+      height: 210px;
+      .hero{
+        width: 100%;
+        height: 100%;
+        place-content: center;
+        background-size: cover;
+        background-position: 50%,50%;
+        .hero__title{
+          width: fit-content;
+          color: #fcfcfc;
+          text-align: center;
+          margin: 0;
+        }
+        .hero__comment{
+          margin: 1rem 0;
+        }
+        .LineLink{
+          margin-top: 40px;
+        }
+      }
+      .heroSub{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+          height: 75px;
+          padding-left: 10px;
+        }
+      }
+    }
+    #indexPage__contents{
+      width: 100%;
+      .indexPage__container{
+        .indexPage__items{
+          min-height: 450px;
+        }
+        .Youtube{
+          min-height: 550px;
+        }
+        .Maincomment{
+          display: flex;
+          background-image: url(../resource/banana-background.png);
+          background-size: contain;
+          .comments{
+            position: relative;
+            margin-top: 2rem;
+            margin-left: 10rem;
+            .mainComment{
+              position: absolute;
+              top: 50%;
+              left: 40%;
+              z-index: 2;
+              transform: translateY(-75%);
+              img{
+                width: 690px;
+              }
+              .buchakePhone{
+                display: none;
+              }  
+            }
+            .lineBtn{
+              position: absolute;
+              z-index: 2;
+              bottom: 40px;
+              width: 142px;
+              line-height: 45px;
+              border-radius: 5px;
+              background-color: $LineBG;
+              color: #fcfcfc;
+              border: none;
+              margin: auto 0;
+              p{
+                margin: 0;
+              }
+            }  
+          }
+          .mainPic{
+            position: relative;
+            width: 100%;
+            height: 600px;
+            img{
+              position: absolute;
+              width: 600px;
+              right: 0;
+            }
+          }
+        }
+        .Course{
+          display: flex;
+          flex-direction: column;
+        .courseContainer{
+            width: 80%;
+            height: auto;
+            margin: 2rem auto;
+            .CourseTitle{
+              text-align: center;
+              margin-bottom: 60px;
+            }
+            .CourseListContainer{
+              .CourseList{
+                width: auto;
+                display: flex;
+                justify-content: space-between;
+                .courseCard{
+                  width: 300px;
+                  height: 320px;
+                  background-color: #FCFCFC;
+                  border-radius: 10px;
+                  position: relative;
+                  .cTitle{
+                    text-align: center;
+                  }
+                  .cPeriod{
+                    width: fit-content;
+                    margin: auto;
+                    padding: 0 1.5rem;
+                    color: #fcfcfc;
+                    border-radius: 15px;
+                    .font_p_m{
+                      margin: auto;
+                    }
+                  }
+                  .cExp{
+                    .list{
+                      padding-left: 16px;
+                      list-style: none;
+                      li:before{
+                        content: "•";
+                        padding: 0 5px;
+                      }                  
+                    }
+                  }
+                  .cComment{
+                    padding: 1rem;
+                  }
+                  .Banana{
+                    position: absolute;
+                    top: -5%;
+                    left: -15%;
+                    transform: rotate(-10deg);
+                  }
+                }
+              }  
+            }
+            .courseContainerReadMore{
+              margin-top: 48px;
+              margin-bottom: 48px;
+              margin-left: 100%;
+              transform: translateX(-100%);
+            }
+          }
+        }
+        .SubcommentThoughtness{
+          place-content: center;
+          .SubcommentThoughtnessContainer{
+            width: 75%;
+            display: flex;
+            align-items: center;
+            gap: 60px;
+            margin: auto;
+            .comments{
+              width: 568px;
+            }
+            .images{
+              position: relative;
+              .subImg{
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                top: 60%;
+                left: 95%;
+                mix-blend-mode: darken;
+              }
+            }
+            .SubcommentTReadMore{
+              margin-top: 48px;
+              margin-bottom: 48px;
+              margin-left: 0;
+            }
+          }
+        }
+        .Subcomment{
+          place-content: center;
+          .SubcommentContainer{
+            width: 75%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 60px;
+            margin: auto;
+            .comments{
+              align-self: flex-start;
+            }
+            .images{
+              width: 456px;
+              order: -1;
+              position: relative;
+              .img{
+                width: 100%;
+              }
+              .subImg{
+                position: absolute;
+                top: -17%;
+                mix-blend-mode: darken;
+              }
+            }
+            .SubcommentCReadMore{
+              margin-top: 48px;
+              margin-bottom: 48px;
+              margin-left: 0;
+            }
+          }
+        }
+        .voiceContainer{
+          width: 90%;
+          margin: auto;
+          padding: 2rem 0;
+          .titleContainer{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+              height: 50px;
+              margin-left: 1rem;
+            }
+          }
+          .cardContainer{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            row-gap: 65px;
+            .voiceCard{
+              width: 560px;
+              height: auto;
+              p{
+                text-align: center;
+                margin: auto;
+              }  
+            }
+          }
+          .voiceCReadMore{
+            margin-top: 48px;
+            margin-bottom: 48px;
+            margin-left: 100%;
+            transform: translateX(-100%);
+          }
+
+        }
+      }
+      .odd{
+        background-color: #F2F0E9;
+      }  
+    }
+
+    .readMore{
+      width: 308px;
+      height: 62px;
+      text-align: right;
+      margin: auto;
+      button{
+        width: 100%;
+        font-family: 'Noto Sans JP', sans-serif;
+      }
+    }  
+    //readMore button size responsive
+    @media only screen and (max-width:835px){
+      .readMore{
+        width: 185px;
+        height: 62px;
+        text-align: right;
+        margin: auto;
+        button{
+          width: 100%;
+          font-family: 'Noto Sans JP', sans-serif;
+        }
+      }  
+    }
+
+    //Responsice for heroSection
+    #heroSection{
+      @media only screen and (max-width:835px){
+        .heroMain{
+          background-position: 70%,50%;
+          .hero__title{
+            font-size: 36px;
+          }
+          .hero__comment{
+            font-size: 18px;
+          }  
+        }
+        .heroSub{
+          h1{
+            font-size: 40px;
+          }
+        }
+  
+      }
+      @media only screen and (max-width:500px){
+        .heroMain{
+          background-position: 70%,50%;
+          .hero__title{
+            font-size: 24px;
+          }
+          .hero__comment{
+            font-size: 16px;
+          }  
+        }
+        .heroSub{
+          h1{
+            font-size: 32px;
+          }
+        }
+
+      }
+    }
+
+    //Responsice for contents
+    //For `Maincomment`,
+    @media only screen and (max-width:1249px){
+      #indexPage__contents{
+        .indexPage__container{
+          .Maincomment{
+            .comments{
+              margin-left: 4rem;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width:1149px){
+      #indexPage__contents{
+        .indexPage__container{
+          .Maincomment{
+            display: flex;
+            flex-direction: column;
+            height: 1100px;
+            .comments{
+              position: relative;
+              order: 1;
+              margin-top: 2rem;
+              margin-left: 5rem;
+              .mainComment{
+                position: absolute;
+                z-index: 2;
+                top: 0%;
+                left: 45%;
+                transform: translate(-50%,-50%);
+                img{
+                  width: 420px;
+                }
+                .buchakePC{
+                  display: none;
+                }    
+                .buchakePhone{
+                  display: block;
+                }    
+              }
+              .lineBtn{
+                position: absolute;
+                z-index: 2;
+                bottom: -200px;
+                width: 142px;
+                line-height: 45px;
+                border-radius: 5px;
+                background-color: $LineBG;
+                color: #fcfcfc;
+                border: none;
+                margin: auto 0;
+              }  
+            }
+            .mainPic{
+              position: static;
+              text-align: center;
+              width: 100%;
+              height: 600px;
+              img{
+                position: static;
+                width: 600px;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width:600px){
+      #indexPage__contents{
+        .indexPage__container{
+          .Maincomment{
+            display: flex;
+            flex-direction: column;
+            height: 830px;
+            .comments{
+              position: relative;
+              height: 100%;
+              width: 100%;
+              order: 1;
+              margin-top: 2rem;
+              margin-left: 0;
+              .mainComment{
+                position: absolute;
+                z-index: 2;
+                top: 0%;
+                left: 50%;
+                transform: translate(-50%,-25%);
+                img{
+                  width: 310px;
+                }
+              }
+              .lineBtn{
+                position: absolute;
+                z-index: 2;
+                bottom: 10%;
+                left: 5%;
+              }  
+            }
+            .mainPic{
+              position: static;
+              text-align: center;
+              width: 100%;
+              height: 600px;
+              img{
+                position: static;
+                width: 300px;
+                right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+    //For `Course`,
+    @media only screen and (max-width:1249px){
+      #indexPage__contents{
+        .indexPage__container{
+          .Course{
+            width: 100%;
+            .courseContainer{
+              width: auto;
+              margin: 2rem auto;
+              .CourseTitle{
+                text-align: center;
+                margin-bottom: 60px;
+              }
+              .CourseListContainer{
+                width: 100vw;
+                .CourseList{
+                  display: flex;
+                  justify-content: space-around;
+                  column-gap: 40px;
+                  row-gap: 30px;
+                  margin: 0 4rem;
+                  .courseCard{
+                    width: 300px;
+                    height: 320px;
+                    background-color: #FCFCFC;
+                    border-radius: 10px;
+                    position: relative;
+                  }
+                }
+              }
+              .courseContainerReadMore{
+                margin-top: 48px;
+                margin-bottom: 48px;
+                margin-left: 94%;
+                transform: translateX(-100%);
+              }
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width:1129px){
+      #indexPage__contents{
+        .indexPage__container{
+          .Course{
+            width: 100%;
+            .courseContainer{
+              width: auto;
+              margin: 2rem auto;
+              overflow: hidden;
+              .CourseTitle{
+                text-align: center;
+                margin-bottom: 30px;
+              }
+              .CourseListContainer{
+                width: 100vw;
+                overflow-x: auto;
+                .CourseList{
+                  width: 900px;
+                  padding-top: 30px;
+                  padding-right: 40px;
+                  display: flex;
+                  justify-content: space-between;
+                  column-gap: 40px;
+                  row-gap: 30px;
+                  margin: 0 4rem;
+                  .courseCard{
+                    min-width: 300px;
+                    height: auto;
+                    background-color: #FCFCFC;
+                    border-radius: 10px;
+                    position: relative;
+                  }
+                }
+              }
+              .courseContainerReadMore{
+                margin-top: 48px;
+                margin-bottom: 48px;
+                margin-left: 94%;
+                transform: translateX(-100%);
+              }
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width:424px){
+      #indexPage__contents{
+        .indexPage__container{
+          .Course{
+            .courseContainer{
+              .CourseList{
+                .courseCard{
+                  width: 240px;
+                  height: 360px;
+                  background-color: #FCFCFC;
+                  border-radius: 10px;
+                  position: relative;
+                  .cTitle{
+                    width: 100%;
+                    text-align: center;
+                  }
+                  .cPeriod{
+                    width: fit-content;
+                    margin: auto;
+                    padding: 0 1.5rem;
+                    color: #fcfcfc;
+                    border-radius: 15px;
+                    .font_p_m{
+                      margin: auto;
+                    }
+                  }
+                  .cExp{
+                    .list{
+                      padding-left: 25px;
+                    }
+                  }
+                  .cComment{
+                    padding: 1rem;
+                  }
+                  .Banana{
+                    position: absolute;
+                    top: -5%;
+                    left: -15%;
+                    transform: rotate(-10deg);
+                  }
+                }
+              }
+              .CourseReadMore{
+                text-align: right;
+              }
+            }
+          }
+        }
+      }
+    }
+    //For `SubcommentThoughtness`,
+    @media only screen and (max-width:1000px){
+      #indexPage__contents{
+        .indexPage__container{
+          .SubcommentThoughtness{
+            padding-bottom: 2rem;
+            .SubcommentThoughtnessContainer{
+              width: 90%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: 10px;
+              margin: auto;
+              .images{
+                order: -1;
+                width: 100%;
+                margin: 60px auto 0;
+                position: relative;
+                img{
+                  width: 100%;
+                }
+                .subImg{
+                  position: absolute;
+                  top: 70%;
+                  left: 100%;
+                  transform: translate(-60%,-40%);
+                  mix-blend-mode: darken;
+                }
+              }
+              .comments{
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+    //For `Subcomment`,
+    @media only screen and (max-width:1000px){
+      #indexPage__contents{
+        .indexPage__container{
+          .Subcomment{
+            padding-bottom: 2rem;
+            .SubcommentContainer{
+              width: 90%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin: auto;
+              gap: 10px;
+              .images{
+                order: -1;
+                width: 100%;
+                margin: 60px auto 0;
+                position: relative;
+                img{
+                  width: 100%;
+                }
+                .subImg{
+                  position: absolute;
+                  top: 0%;
+                  transform: translate(50%,-90%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    //For `Voice`
+    @media only screen and (max-width:1290px){
+      #indexPage__contents{
+        .indexPage__container{
+          .voiceContainer{
+            .cardContainer{
+              display: flex;
+              flex-direction: column;
+              row-gap: 65px;
+              .voiceCard{
+                width: 560px;
+                height: auto;
+                margin: auto;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width:675px){
+      #indexPage__contents{
+        .indexPage__container{
+          .voiceContainer{
+            .cardContainer{
+              row-gap: 45px;
+              .voiceCard{
+                width: auto;
+                justify-items: center;
+                p{
+                  text-align: center;
+                  margin: auto;
+                }  
+                iframe{
+                  width: 300px;
+                  height: auto;
+                  margin: auto;
+                }
+              }
+            }
+            .readMore{
+              margin-top: 48px;
+              margin-bottom: 48px;
+              margin-left: 100%;
+              transform: translateX(-100%);
+            }  
+          }
+        }
+      }
+    }
+  }
+
+  //For `Youtube`,
+  @media only screen and (max-width:659px){
+    swiper-slide {
+      iframe{
+        width: 300px;
+        height: auto;
+      }
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: auto;
+      position: relative;
+      //because using Youtube page
+      //can't swipe on the video
+      //so added transparent box to
+      //add the swipe function on video
+    }  
+    swiper-container {
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 30px;
+    }  
+    .Youtube{
+      min-height: 370px !important;
+    }
+  }
+
+  /////Footer//////////
+  #footer{
+    a{
+      color: #fcfcfc;
+    }
+    a:visited{
+      color: #fcfcfc;
+    }
+
+    width: 100%;
+    height: 140px;
+    background-color: $FooterBG;
+    color: #fcfcfc;
+    place-content: center;
+    .footer__container{
+      width: 90%;
+      height: 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+//      .footer__title{}
+      .footer__ulContainer{
+        .footer__ul{
+          list-style: none;
+          display: flex;
+          gap: 56px;
+          padding: 0 1rem;
+          .footer__li{
+            a{
+              color: #fcfcfc;
+            }
+          }
+        }
+      }
+      .footer__icons{
+        display: flex;
+        gap: 15px;
+      }
+    }
+
+    //Responsice for Footer
+    @media only screen and (max-width:899px){
+      .footer__container{
+        width: 90%;
+        height: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        .footer__ulContainer{
+          .footer__ul{
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 1rem;
+            flex-wrap: wrap;
+          }
+        }
+      }  
+    }
+    @media only screen and (max-width:549px){
+      height: 440px;
+      .footer__container{
+        width: 90%;
+        height: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        .footer__ulContainer{
+          .footer__ul{
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1rem;
+            gap: 30px;
+            margin: 1rem 0 2rem 0;
+            flex-wrap: wrap;
+          }
+        }
+      }  
+    }
+  }
+}

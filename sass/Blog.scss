@@ -1,0 +1,13 @@
+#blogContainer{
+  height: 100vh;
+  .container{
+    width: 90%;
+    height: 90%;
+    margin: 3rem auto;
+    text-align: center;
+    iframe{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

@@ -1,0 +1,204 @@
+#About{
+  overflow: hidden;
+
+  .aboutFlexContainer{
+    width: 100%;
+    .aboutFlex{
+      display: flex;
+      width: 100%;
+      min-height: 450px;
+      justify-content: center;
+      gap: 4rem;
+      .text{
+        width: 40%;
+        margin-top: 60px;
+        p{
+          margin-top: 0;
+        }
+      }
+      .pic{
+        width: 40%;
+        margin-top: 60px;
+        img{
+          width: 100%;
+          border-radius: 10px;
+        }
+      }
+    }
+    .odd{
+      background-color: #F2F0E9;
+      .text{
+        order: 2;
+      }
+    }
+    .aboutCALife{
+      position: relative;
+      .text{
+        position: relative;
+        .bananaFly{
+          position: absolute;
+          top: -5%;
+          left: 75%;
+          transform: translateX(-100%);
+        }
+      }
+    }
+    .aboutThought{
+      position: relative;
+      .pic{
+        height: 100%;
+        position: relative;
+        .bananaNomal{
+          position: absolute;
+          width: auto;
+          top: 70%;
+          left: 100%;
+          transform: translate(-50px,-50%);
+          mix-blend-mode: darken;
+        }
+      }
+    }
+    .aboutThoughtRoot{
+      position: relative;
+      .pic{
+        height: 100%;
+        margin-bottom: 80px;
+        position: relative;
+        .bananaBud{
+          position: absolute;
+          width: auto;
+          top: 0;
+          left: 5%;
+          transform: translateY(-50px);
+          mix-blend-mode: darken;
+        }
+      }
+      .text{
+        margin-bottom: 80px;
+        p{
+          margin: 0;
+        }
+      }
+    }
+  }
+  .aboutYoutubeContainer{
+    width: 100%;
+    min-height: 450px;
+    .youtubeTitle{
+      display: flex;
+      align-items: center;
+      height: 125px;
+      text-align: center;
+      place-content: center;
+      img{
+        padding-right: 5px;
+      }
+    }
+    .youtubeArea{
+      width: 75%;
+      height: 175px;
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      margin: auto;
+      iframe{
+        border-radius: 10px;
+      }
+    }
+    .youtubeLink{
+      height: 135px;
+      text-align: center;
+      place-content: center;
+      .youtubeBtn{
+        background-color: #FD1513;
+        color: #fcfcfc;
+        border: none;
+        border-radius: 10px;
+        height: 45px;
+        padding: 0 1.5rem;
+      }
+    }
+  
+  }
+
+  @media only screen and (max-width:835px){
+    .aboutFlexContainer{
+      width: 100%;
+      .aboutFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        .text{
+          width: 80%;
+          margin-top: 30px;
+          p{
+            margin-top: 0;
+          }
+        }
+        .pic{
+          order: -1;
+          width: 80%;
+          margin-top: 60px;
+          img{
+            width: 100%;
+            border-radius: 10px;
+          }
+        }
+      }
+      .aboutCALife{
+        position: relative;
+      }
+      .aboutThought{
+        position: relative;
+        .pic{
+          position: relative;
+        }
+      }
+      .aboutThoughtRoot{
+        .pic{
+          margin-bottom: 0px;
+        }
+      }  
+    }
+    .aboutYoutubeContainer{
+      .youtubeTitle{
+        display: flex;
+        align-items: center;
+        height: 125px;
+        text-align: center;
+        place-content: center;
+        img{
+          padding-right: 5px;
+        }
+      }
+      .youtubeArea{
+        width: 75%;
+        min-height: 175px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        margin: auto;
+        padding: 5rem 0;
+        iframe{
+          width: 300px;
+          border-radius: 10px;
+          margin: auto;
+        }
+      }
+    }  
+  }
+
+  @media only screen and (max-width:425px){
+    .aboutYoutubeContainer{
+      .youtubeArea{
+        width: 100%;
+      }
+    }  
+  }
+
+  //animation
+
+}

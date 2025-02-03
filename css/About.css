@@ -1,0 +1,193 @@
+#About {
+  overflow: hidden;
+}
+#About .aboutFlexContainer {
+  width: 100%;
+}
+#About .aboutFlexContainer .aboutFlex {
+  display: flex;
+  width: 100%;
+  min-height: 450px;
+  justify-content: center;
+  gap: 4rem;
+}
+#About .aboutFlexContainer .aboutFlex .text {
+  width: 40%;
+  margin-top: 60px;
+}
+#About .aboutFlexContainer .aboutFlex .text p {
+  margin-top: 0;
+}
+#About .aboutFlexContainer .aboutFlex .pic {
+  width: 40%;
+  margin-top: 60px;
+}
+#About .aboutFlexContainer .aboutFlex .pic img {
+  width: 100%;
+  border-radius: 10px;
+}
+#About .aboutFlexContainer .odd {
+  background-color: #F2F0E9;
+}
+#About .aboutFlexContainer .odd .text {
+  order: 2;
+}
+#About .aboutFlexContainer .aboutCALife {
+  position: relative;
+}
+#About .aboutFlexContainer .aboutCALife .text {
+  position: relative;
+}
+#About .aboutFlexContainer .aboutCALife .text .bananaFly {
+  position: absolute;
+  top: -5%;
+  left: 75%;
+  transform: translateX(-100%);
+}
+#About .aboutFlexContainer .aboutThought {
+  position: relative;
+}
+#About .aboutFlexContainer .aboutThought .pic {
+  height: 100%;
+  position: relative;
+}
+#About .aboutFlexContainer .aboutThought .pic .bananaNomal {
+  position: absolute;
+  width: auto;
+  top: 70%;
+  left: 100%;
+  transform: translate(-50px, -50%);
+  mix-blend-mode: darken;
+}
+#About .aboutFlexContainer .aboutThoughtRoot {
+  position: relative;
+}
+#About .aboutFlexContainer .aboutThoughtRoot .pic {
+  height: 100%;
+  margin-bottom: 80px;
+  position: relative;
+}
+#About .aboutFlexContainer .aboutThoughtRoot .pic .bananaBud {
+  position: absolute;
+  width: auto;
+  top: 0;
+  left: 5%;
+  transform: translateY(-50px);
+  mix-blend-mode: darken;
+}
+#About .aboutFlexContainer .aboutThoughtRoot .text {
+  margin-bottom: 80px;
+}
+#About .aboutFlexContainer .aboutThoughtRoot .text p {
+  margin: 0;
+}
+#About .aboutYoutubeContainer {
+  width: 100%;
+  min-height: 450px;
+}
+#About .aboutYoutubeContainer .youtubeTitle {
+  display: flex;
+  align-items: center;
+  height: 125px;
+  text-align: center;
+  place-content: center;
+}
+#About .aboutYoutubeContainer .youtubeTitle img {
+  padding-right: 5px;
+}
+#About .aboutYoutubeContainer .youtubeArea {
+  width: 75%;
+  height: 175px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin: auto;
+}
+#About .aboutYoutubeContainer .youtubeArea iframe {
+  border-radius: 10px;
+}
+#About .aboutYoutubeContainer .youtubeLink {
+  height: 135px;
+  text-align: center;
+  place-content: center;
+}
+#About .aboutYoutubeContainer .youtubeLink .youtubeBtn {
+  background-color: #FD1513;
+  color: #fcfcfc;
+  border: none;
+  border-radius: 10px;
+  height: 45px;
+  padding: 0 1.5rem;
+}
+@media only screen and (max-width: 835px) {
+  #About .aboutFlexContainer {
+    width: 100%;
+  }
+  #About .aboutFlexContainer .aboutFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  #About .aboutFlexContainer .aboutFlex .text {
+    width: 80%;
+    margin-top: 30px;
+  }
+  #About .aboutFlexContainer .aboutFlex .text p {
+    margin-top: 0;
+  }
+  #About .aboutFlexContainer .aboutFlex .pic {
+    order: -1;
+    width: 80%;
+    margin-top: 60px;
+  }
+  #About .aboutFlexContainer .aboutFlex .pic img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  #About .aboutFlexContainer .aboutCALife {
+    position: relative;
+  }
+  #About .aboutFlexContainer .aboutThought {
+    position: relative;
+  }
+  #About .aboutFlexContainer .aboutThought .pic {
+    position: relative;
+  }
+  #About .aboutFlexContainer .aboutThoughtRoot .pic {
+    margin-bottom: 0px;
+  }
+  #About .aboutYoutubeContainer .youtubeTitle {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    text-align: center;
+    place-content: center;
+  }
+  #About .aboutYoutubeContainer .youtubeTitle img {
+    padding-right: 5px;
+  }
+  #About .aboutYoutubeContainer .youtubeArea {
+    width: 75%;
+    min-height: 175px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    margin: auto;
+    padding: 5rem 0;
+  }
+  #About .aboutYoutubeContainer .youtubeArea iframe {
+    width: 300px;
+    border-radius: 10px;
+    margin: auto;
+  }
+}
+@media only screen and (max-width: 425px) {
+  #About .aboutYoutubeContainer .youtubeArea {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=About.css.map */

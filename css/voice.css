@@ -1,0 +1,118 @@
+#Voice {
+  width: 100%;
+  background-image: url(../resource/banana-background.png);
+  background-size: contain;
+}
+#Voice .hide {
+  display: none !important;
+}
+#Voice .VoiceCardContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 65px;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 56px 0;
+}
+#Voice .VoiceCardContainer .VoiceCard {
+  width: 520px;
+  height: auto;
+  background-color: #fefefd;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);
+}
+#Voice .VoiceCardContainer .VoiceCard .VoiceYoutube iframe {
+  width: 100%;
+  height: 293px;
+}
+#Voice .VoiceCardContainer .VoiceCard .VoiceTitle {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#Voice .VoiceCardContainer .VoiceCard .VoiceComment {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#Voice .GoogleReview .GoogleReviewTitle {
+  text-align: center;
+}
+#Voice .GoogleReview .GoogleReviewContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 30px 0;
+}
+#Voice .GoogleReview .GoogleReviewContainer img {
+  background-color: #fefefd;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);
+}
+#Voice .GoogleReview .showMore {
+  width: 70%;
+  height: 60px;
+  margin: auto;
+  text-align: center;
+  background-color: #DCDAD4;
+  place-content: center;
+  margin-bottom: 3rem;
+}
+#Voice .GoogleReview .showMore .showMoreBtn {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  font-family: "Noto Sans JP", sans-serif;
+}
+#Voice .GoogleReview .showMore .showMoreBtn p {
+  margin: auto;
+}
+@media only screen and (max-width: 599px) {
+  #Voice .VoiceCardContainer .VoiceCard {
+    width: 320px;
+    height: auto;
+  }
+  #Voice .VoiceCardContainer .VoiceCard .VoiceYoutube iframe {
+    width: 100%;
+    height: auto;
+  }
+  #Voice .VoiceCardContainer .VoiceCard .VoiceYoutube img {
+    width: 100%;
+  }
+  #Voice .GoogleReview .GoogleReviewTitle {
+    text-align: center;
+  }
+  #Voice .GoogleReview .GoogleReviewContainer {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 30px 0;
+  }
+  #Voice .GoogleReview .GoogleReviewContainer img {
+    width: 100%;
+  }
+  #Voice .GoogleReview .showMore {
+    width: 70%;
+    height: 60px;
+    margin: auto;
+    text-align: center;
+    background-color: #DCDAD4;
+    place-content: center;
+    margin-bottom: 3rem;
+  }
+  #Voice .GoogleReview .showMore .showMoreBtn {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  #Voice .GoogleReview .showMore .showMoreBtn p {
+    margin: auto;
+  }
+}
+
+/*# sourceMappingURL=voice.css.map */
