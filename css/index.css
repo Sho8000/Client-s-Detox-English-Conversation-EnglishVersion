@@ -98,7 +98,7 @@ main {
   margin: auto;
 }
 .indexPage main #heroSection .IndexPage__hero .LineLink .lineBtn {
-  width: 142px;
+  width: 166px;
   line-height: 45px;
   border-radius: 5px;
   background-color: #00B800;
@@ -160,7 +160,7 @@ main {
   color: black;
 }
 #app #header .header__nav__PC .header__ulContainer .header__ul .header__li__LINE {
-  width: 142px;
+  width: 166px;
   line-height: 100%;
   border-radius: 5px;
   background-color: #00B800;
@@ -181,6 +181,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   list-style: none;
   padding: 0 1rem;
   gap: 24px;
@@ -189,7 +190,7 @@ main {
   color: black;
 }
 #app #header .header__nav__PC .header__ulContainerHBG .header__ul .header__li__LINE {
-  width: 142px;
+  width: 166px;
   line-height: 100%;
   border-radius: 5px;
   background-color: #00B800;
@@ -200,7 +201,7 @@ main {
 #app #header .hamburgerSVG {
   display: none;
 }
-@media only screen and (max-width: 815px) {
+@media only screen and (max-width: 950px) {
   #app #header .header__ulContainer {
     display: none;
   }

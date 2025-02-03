@@ -93,7 +93,7 @@ main{
           width: 80%;
           margin: auto;
           .lineBtn{
-            width: 142px;
+            width: 166px;
             line-height: 45px;
             border-radius: 5px;
             background-color: $LineBG;
@@ -164,7 +164,7 @@ main{
             }
           }
           .header__li__LINE{
-            width: 142px;
+            width: 166px;
             line-height: 100%;
             border-radius: 5px;
             background-color: $LineBG;
@@ -187,6 +187,7 @@ main{
           display: flex;
           flex-direction: column;
           align-items: center;
+          text-align: center;
           list-style: none;
           padding: 0 1rem;
           gap: 24px;
@@ -196,7 +197,7 @@ main{
             }
           }
           .header__li__LINE{
-            width: 142px;
+            width: 166px;
             line-height: 100%;
             border-radius: 5px;
             background-color: $LineBG;
@@ -212,7 +213,7 @@ main{
     }
 
     //header Responsive
-    @media only screen and (max-width:815px){
+    @media only screen and (max-width:950px){
       .header__ulContainer{
         display: none;
       }
