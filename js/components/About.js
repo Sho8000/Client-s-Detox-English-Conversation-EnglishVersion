@@ -1,5 +1,5 @@
 import { Component } from "../common/component.js";
-import { BananaPic, textTitle, textContent, aboutPics, aboutYoutube, textClassName, textIdName } from "../common/Variable.js";
+import { BananaPic, textTitle, textContent, aboutPics, aboutYoutube, textClassName, textIdName, YoutubeBtnText } from "../common/Variable.js";
 
 export class About extends Component{
   render(){
@@ -10,10 +10,10 @@ export class About extends Component{
           <div class="aboutFlexContainer">
           </div>
           <div class="aboutYoutubeContainer">
-            <div class="youtubeTitle">${BananaPic[5]}<p class="font_p_xl fontWaitBold">Youtube チャンネル</p></div>
+            <div class="youtubeTitle">${BananaPic[5]}<p class="font_p_xl fontWaitBold">Youtube channel</p></div>
             <div class="youtubeArea"></div>
             <div class="youtubeLink">
-              <a href="${this.YoutubeLink}"><button class="youtubeBtn font_p_m fontWaitBold">Youtube チャンネルはこちら</button></a>
+              <a href="${this.YoutubeLink}"><button class="youtubeBtn font_p_m fontWaitBold">${YoutubeBtnText}</button></a>
             </div>
           </div>
         </section>`

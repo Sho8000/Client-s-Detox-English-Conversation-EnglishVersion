@@ -1,5 +1,5 @@
 import { Component } from "../common/component.js";
-import { IndexContents, IndexYoutube, IndexSubbomment, Pictures, voiceTitle, BananaPic, IndexSubbommentThoughtness, IndexCourseTitle, IndexCoursePeriod, IndexCourseComment, IndexCourseExp, textIdName, mainCouse, LineBtnText } from "../common/Variable.js";
+import { IndexContents, IndexYoutube, IndexSubbomment, Pictures, voiceTitle, BananaPic, IndexSubbommentThoughtness, IndexCourseTitle, IndexCoursePeriod, IndexCourseComment, IndexCourseExp, textIdName, mainCouse, LineBtnText, YoutubeBtnText } from "../common/Variable.js";
 
 const BASE_CLASS = "indexPage";
 
@@ -47,7 +47,7 @@ export class Index extends Component{
                 </swiper-slide>
               </swiper-container>
               <div class="youtubeLink">
-                <a href="${this.YoutubeEnglishClassLink}"><button class="youtubeBtn font_p_m fontWaitBold">Youtube チャンネルはこちら</button></a>
+                <a href="${this.YoutubeEnglishClassLink}"><button class="youtubeBtn font_p_m fontWaitBold">${YoutubeBtnText}</button></a>
               </div>`
               )
               children.find(".Youtube").append(eachContents)  

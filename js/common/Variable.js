@@ -223,17 +223,29 @@ export const googleReviews = [
 ]
 
 //About variables
-export const textTitle = [
+/* export const textTitle = [
   "Akiちゃん",
   "CAライフ",
   "想い",
   "その想いはどこから？"
+]; */
+export const textTitle = [
+  "Aki-chan",
+  "life as a cabin attendant",
+  "Thoughts",
+  "Where does that thought come from?"
 ];
-export const textContent = [
+/* export const textContent = [
   `こんにちは、あきちゃんです。<br>私は九州の城下町、熊本で魚屋の両親の元に次男（？）、長女（？）として生まれました。<br>ま、幼少期から男の子が好きだった訳なんですね。<br>小さい時から、植物と飛行機と英語が好きで、好きが嵩じて、園芸店で働いたり、CAになったり、英会話コーチをやって来ました。<br>プライベートでは妊活中でして、女性カップルに精子提供をすることで新しい形の家族を作ろうと奮闘しています。<br>そんなカラフルでモザイクな感じの私がみなさんに提供しているのが「呪いから解放」するセッションです。<br>興味がある人はまず連絡してみてくださいね！`,
   `中でも最もexcitingだったのはCAライフ（実際はキャビンクルーと呼びます）ですね。タイの航空会社とドバイの航空会社に居ましたが、日々、世界１４０都市をまたにかける生活でした。<br>海外はドバイ、バンコク、シドニー、ロンドン、パリと住んできまして、フランス語やタイ語を含む４か国語を話します。今はアラビア語の習得に向けて励んでいます。`,
   `わたしたちは生まれる前から<br>何をしに来たのか決めているとも言われます。<br>でも、子どもから大人になる間に色んな経験をして、<br>小さな諦めの中、それが何だったか忘れて来ます。<br>そして、そんなものはなかったかのようになってしまいます。<br>それはまるで暗闇にある宝物の様に、見えません。<br>でも、それに灯り &lt;TORCH&gt; が灯されれば見える。キラっキラっでなくてもいい。うっすらとでも見えてくればいい。<br>少しずつでも見えて来たあなたに灯 &lt;TORCH&gt; を灯したい。`,
   `わたしは４歳の時から植物が好きでした。きっかけは園長先生がわたしにワタの木の苗をくれたところから始まります。<br>それから色んなものを育てるようになり、園芸店に行くのが大好きでした。<br>そして、お店に着いて真っ先に行くところが、「見切り品コーナー」。子どもなので安いからというところでそこに行く訳ではありませんでした。なぜ、そのコーナーに行くかというと、まだ「可能性」のあるものが捨てられるのが悲しかったからなんです。<br>なので多年草で来年も咲く可能性があるものを真っ先に手に取ってお家に持って帰り植え替えて、秋を迎え、冬を迎え、新芽が出てきて、翌春に花を咲かせていました。そうやって、まだ可能性のある子たちを助け出すのが小さい時から好きだったんです。<br>わたしたちは「可能性」があるにも関わらず捨ててしまったり、なかったことにしてしまうのが得意です。<br>「いやいや私には無理ですよ」<br>「全然わかりません」<br>「もう歳なんで」<br>わたしはそれを聞き逃したくない。 `
+]; */
+export const textContent = [
+  `Hello, I'm Aki-chan.<br>I was born in Kumamoto, a castle town in Kyushu, as the second son (?) or eldest daughter (?) to parents who ran a fish shop.<br>Well, I've liked boys since I was young.<br>Since childhood, I’ve loved plants, airplanes, and English. My passion for these things grew, leading me to work at a gardening store, become a flight attendant, and work as an English conversation coach.`,
+  `Among all of my experiences, the most exciting was my life as a flight attendant (though we actually call it cabin crew). I worked for airlines in Thailand and Dubai, leading a life that took me to 140 cities around the world on a daily basis.<br>I've lived in cities like Dubai, Bangkok, Sydney, London, and Paris, and I speak four languages, including French and Thai. Currently, I'm working hard to learn Arabic.`,
+  `It is said that we decide what we are here to do even before we are born.<br>But as we grow from childhood to adulthood, we have many different experiences and, in a small moment of resignation, we forget what those experiences were.<br>And it becomes as if it never existed.<br>It is like a treasure hidden in the darkness, unable to be seen.<br>But if a light, &lt;TORCH&gt; is lit on it, it can be seen. It doesn't have to sparkle. It's enough if you can see it even faintly.<br>We would like to light a  &lt;TORCH&gt; on you, who have begun to see it, even if only little by little.`,
+  `It is said that we decide what we are coming to do even before we are born.<br>However, as we grow from children to adults, we go through various experiences, and amid small compromises, we begin to forget what that was.<br>Eventually, it seems as if it never existed at all.<br>It's like a hidden treasure in the darkness, unseen.<br>But if you shine a light—a torch—on it, you can see it. It doesn't have to sparkle brightly; even if it's just faintly visible, that's enough.<br>To those of you who are beginning to see it little by little, I want to light your torch.`
 ];
 export const textClassName = [
   "aboutAki",
