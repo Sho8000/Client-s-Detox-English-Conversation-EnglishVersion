@@ -346,7 +346,7 @@ main {
   justify-content: space-between;
 }
 #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard {
-  min-width: 300px;
+  width: 300px;
   height: auto;
   background-color: #FCFCFC;
   border-radius: 10px;
@@ -662,7 +662,7 @@ main {
     margin: 0 4rem;
   }
   #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard {
-    min-width: 300px;
+    width: 300px;
     height: auto;
     background-color: #FCFCFC;
     border-radius: 10px;

@@ -371,7 +371,7 @@ main{
                 display: flex;
                 justify-content: space-between;
                 .courseCard{
-                  min-width: 300px;
+                  width: 300px;
                   height: auto;
                   background-color: #FCFCFC;
                   border-radius: 10px;
@@ -724,7 +724,7 @@ main{
                   row-gap: 30px;
                   margin: 0 4rem;
                   .courseCard{
-                    min-width: 300px;
+                    width: 300px;
                     height: auto;
                     background-color: #FCFCFC;
                     border-radius: 10px;

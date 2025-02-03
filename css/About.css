@@ -79,7 +79,7 @@
   margin-bottom: 80px;
 }
 #About .aboutFlexContainer .aboutThoughtRoot .text p {
-  margin: 0;
+  margin-bottom: 24px;
 }
 #About .aboutYoutubeContainer {
   width: 100%;
