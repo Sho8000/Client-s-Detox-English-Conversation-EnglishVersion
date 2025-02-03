@@ -1,7 +1,7 @@
 //Banana
 //0:nomal 1:bud 2:cute 3:flying
 //4:giggling 5:half-peeled 6:peeled 7:talking
-export const BananaPic = [
+/* export const BananaPic = [
   `<img src="../resource/normal.svg" alt="banana" style="height: 50px;" class="bananaNomal">`,
   `<img src="../resource/bud.svg" alt="banana" style="height: 50px;" class="bananaBud">`,
   `<img src="../resource/cute.svg" alt="banana" style="height: 50px;" class="bananaCute">`,
@@ -10,6 +10,16 @@ export const BananaPic = [
   `<img src="../resource/half-peeled.svg" alt="banana" style="height: 50px;" class="bananaHalfPeeled">`,
   `<img src="../resource/peeled.svg" alt="banana" style="height: 50px;" class="bananaPeeled">`,
   `<img src="../resource/Speech\ bubble.svg" alt="banana" style="height: 50px;" class="bananaTalking">`
+] */
+export const BananaPic = [
+  `<img src="../resource/normal.svg" alt="banana" style="height: 50px;" class="bananaNomal">`,
+  `<img src="../resource/bud.svg" alt="banana" style="height: 50px;" class="bananaBud">`,
+  `<img src="../resource/cute.svg" alt="banana" style="height: 50px;" class="bananaCute">`,
+  `<img src="../resource/flying.svg" alt="banana" style="height: 50px;" class="bananaFly">`,
+  `<img src="../resource/giggling.svg" alt="banana" style="height: 50px;" class="bananaGiggling">`,
+  `<img src="../resource/half-peeled.svg" alt="banana" style="height: 50px;" class="bananaHalfPeeled">`,
+  `<img src="../resource/peeled.svg" alt="banana" style="height: 50px;" class="bananaPeeled">`,
+  `<img src="../resource/Speech\ bubbleEng.png" alt="banana" style="height: 80px;" class="bananaTalking">`
 ]
 
 //Common Btn LINE/Youtube
@@ -55,25 +65,45 @@ export const IndexYoutube = [
   `<iframe width="560" height="300" src="https://www.youtube.com/embed/uJUhbkLYy0Y?si=VbJ6uehqiY0hOBbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 ]
 
-export const IndexCourseTitle = [
+/* export const IndexCourseTitle = [
   `デトックス英会話<br>&lt; First Class &gt;`,
   `デトックス英会話<br>&lt; Business Class &gt;`,
   `デトックス英会話<br>&lt; Economy Class &gt;`
+]; */
+export const IndexCourseTitle = [
+  `Detox English Conversation<br>&lt; First Class &gt;`,
+  `Detox English Conversation<br>&lt; Business Class &gt;`,
+  `Detox English Conversation<br>&lt; Economy Class &gt;`
 ];
-export const IndexCoursePeriod = [
+/* export const IndexCoursePeriod = [
   `12ヶ月コース`,
   `6ヶ月コース`,
   `6ヶ月コース`
+]; */
+export const IndexCoursePeriod = [
+  `12-Month Course`,
+  `6-Month Course`,
+  `6-Month Course`
 ];
-export const IndexCourseExp = [
+/* export const IndexCourseExp = [
   [`色々やったけど結果が出なかった方`,`自分ではなかなか続かない`,`どうしていいか分からない`],
   [`色々やったけど結果が出なかった方`,`自分ではなかなか続かない`],
   [`色々やったけど結果が出なかった方`,`自分で続けるのは苦手ではない方`],
+]; */
+export const IndexCourseExp = [
+  [`For those who have tried various methods but haven't seen results`,`For those who find it hard to continue on their own`,`For those who don't know what to do`],
+  [`For those who have tried various methods but haven't seen results`,`For those who find it hard to continue on their own`],
+  [`For those who have tried various methods but haven't seen results`,`For those who are not bad at continuing on their own`],
 ];
-export const IndexCourseComment = [
+/* export const IndexCourseComment = [
   `完全オーダーメイドコーチング<br>（海外フィールドワーク付）`,
   `セミオーダーメイドコーチング`,
   `グループワーク中心`
+]; */
+export const IndexCourseComment = [
+  `Fully Customized Coaching<br>(Includes overseas fieldwork)`,
+  `Semi-Customized Coaching`,
+  `Group Work Focus`
 ];
 /* 0:title, 1:comment 2:ReadMore 3:img */
 export const IndexSubbommentThoughtness = [
@@ -92,26 +122,45 @@ export const IndexSubbomment = [
 
 //Course variables
 /* 0:mainTitle, 1:picURL 2:mainExp 3:notice 4:もっと見る*/
-export const mainCouse = [
+/* export const mainCouse = [
   "デトックス英会話",
   "../resource/detox.png",
   "「単語力がないから話せない」「文法力がないから話せない」「リスニング力がないからダメだ」<br>何かがないから出来ないって思ってますね？実はめっちゃ毒が溜まっているから話せないんですよ！良いもの入れても毒が溜まっていてはどうにもならないですよね。カラダと同じ。<br>「英語脳」をデトックスしちゃえば話せます！<br>コースは基本オンラインで、AKiFが日本各地や海外からレッスンコーチングを届けます。",
   "＊＊全クラス、あなたの英語のレベルは全く関係ありません。「動詞」とか「目的語」とか言われても分からない、、というレベルでも無問題です。",
   "もっと見る"
+] */
+export const mainCouse = [
+  "Detox English Conversation",
+  "../resource/detox.png",
+  `You might think, 'I can't speak because I don't have vocabulary,' 'I can't speak because I lack grammar skills,' or 'I can't do it because my listening skills are poor.'<br>In reality, it's because you have accumulated toxins that prevent you from speaking! If you have toxins inside, even good things won't help, right? It's just like the body.<br>If you detox your 'English brain,' you can speak!<br>The courses are primarily online, and AKiF will deliver lesson coaching from various locations in Japan and abroad.`,
+  "Your English level doesn't matter in any of the classes. Even if you don't know terms like 'verb' or 'object,' that's totally fine.",
+  "Read more"
 ]
-export const mainCousesTitle = [
+/* export const mainCousesTitle = [
   "< First Class >",
   "< Business Class >",
   "< Economy Class >",
   "＜ LCCコース ＞"
+] */
+export const mainCousesTitle = [
+  "< First Class >",
+  "< Business Class >",
+  "< Economy Class >",
+  "< LCC course >"
 ]
-export const mainCousesPeriod = [
+/* export const mainCousesPeriod = [
   "12ヶ月コース",
   "6ヶ月コース",
   "6ヶ月コース",
   "サブスクコース"
+] */
+export const mainCousesPeriod = [
+  "12-Month Course",
+  "6-Month Course",
+  "6-Month Course",
+  "Subscription Course"
 ]
-export const mainCousesList = [
+/* export const mainCousesList = [
   ["色々やったけど結果が出なかった方",
     "自分ではなかなか続かない",
     "どうしていいか分からない方"
@@ -125,37 +174,72 @@ export const mainCousesList = [
   ["デトックス英会話のエッセンスをちょっと知りたい方",
     "AKiFの楽しさや自由さに少し触れたい方"
   ]
+] */
+export const mainCousesList = [
+  ["For those who have tried various methods but haven't seen results",
+    "For those who find it hard to continue on their own",
+    "For those who don't know what to do"
+  ],
+  ["For those who have tried various methods but haven't seen results",
+    "For those who find it hard to continue on their own"
+  ],
+  ["For those who have tried various methods but haven't seen results",
+    "For those who are not bad at continuing on their own"
+  ],
+  ["For those who want to get a taste of the essence of Detox English Conversation",
+    "For those who want to experience a bit of the fun and freedom of AKiF"
+  ]
 ]
 export const mainCouseComment = [
-  "完全オーダーメイドコーチング<br>（海外フィールドワーク付）",
-  "セミオーダーメイドコーチング",
-  "グループワーク中心",
+  `Fully Customized Coaching<br>(Includes overseas fieldwork)`,
+  `Semi-Customized Coaching`,
+  `Group Work Focus`,
   ""
 ]
-export const subCourseTitle = [
+/* export const subCourseTitle = [
   "デトックスLIFEサロン",
   "CREW MEAL",
   "パッタイ"
+] */
+export const subCourseTitle = [
+  "Detox LIFE Salon",
+  "CREW MEAL",
+  "Pad Thai"
 ]
 export const subCourseImg = [
   "../resource/detoxLifeSalon.png",
   "../resource/CA.png",
   "../resource/Thailand.png"
 ]
-export const subCoursePeriod = [
+/* export const subCoursePeriod = [
   ["サブスクコース"],
   ["サブスクコース"],
   ["3ヶ月コース","6ヶ月コース"]
+] */
+export const subCoursePeriod = [
+  ["Subscription Course"],
+  ["Subscription Course"],
+  ["3-month course","6-month course"]
 ]
-export const subCourseExp = [
+/* export const subCourseExp = [
   [],
   ["受講期間はCAになれるまでサポート","完全オーダーメイドコース"],
   []
+] */
+export const subCourseExp = [
+  [],
+  ["The support period lasts until you become a cabin attendant.","Fully Customized Coursey"],
+  []
 ]
-export const subCourseComment = [
+/* export const subCourseComment = [
   "このコースは英語のことには特に触れません。あなたの人生にもっと触れます。夢はあります？何か目標あります？もちろんあるならそれを応援します。<br>でも、そんなものはない。あったらいいだろうけど見つからない。ずっと探し続けたりするかもしれませんね。それでもいいじゃないですか。<br>でも、そんな中もっとイキイキしたいとは思っているかもしれませんね。そのためには、「毒」抜きをすればいいんです。それは体内の毒かもしれないし、マインド、考えの方の「毒」かもしれませんね。カラダもマインドも綺麗になっていったら、透明感が増して、見えてくる新しい世界があるはず。一緒にそれをみませんか？",
   "キャビンクルー、キャビンアテンダント、フライトアテンダント、CA、客室乗務員、色んな呼び方がありますね。これ、やりたいと思ったら一生やりたいと思うお仕事です。私も外資系で２社経験しましたが、やっぱりやって良かったと思うし、今でもまた飛びたいと思います。そんな素敵な飛び職、一緒に目指しませんか？",
   "タイ語って可愛いですよね？そんなペラペラにまでならなくても、ちょっとタイ語が話せたら、人生、もうちょっと面白くなるかも？CAとして飛びながらバンコクに留学して、タイ人CAとタイ人のお客さんとローカルと遊んでいた私とちょっとサワッディーしちゃいませんか？"
+] */
+export const subCourseComment = [
+  `This course doesn't specifically address English; it focuses more on your life. Do you have dreams? Any goals? If you do, of course, I'll support you.<br>But what if you don't have any? It would be nice to have them, but you just can't find them. You might continue searching forever, and that's okay.<br>However, you may want to feel more vibrant in the meantime. To achieve that, you need to detox. This could be physical toxins in your body or 'toxins' in your mind and thoughts. Once both your body and mind become clearer, you'll gain more transparency, and a new world will start to emerge. Shall we explore that together?`,
+  "There are many names for this role: cabin crew, cabin attendant, flight attendant, CA, and flight personnel. It's a job that, once you want to do it, you'll want to pursue for a lifetime. I've worked for two foreign airlines, and I truly believe it was a great experience—I still wish to fly again. Would you like to aim for this wonderful career together?",
+  `Isn't Thai cute? Even if you don't become fluent, being able to speak a little Thai might make life a bit more interesting, right? While flying as a CA, I studied abroad in Bangkok and played with Thai CAs and local Thai people. Want to say a little "Sawasdee" with me?`
 ]
 
 //Voice variables
