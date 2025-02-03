@@ -1,5 +1,5 @@
 import { Component } from "../common/component.js";
-import { IndexContents, IndexYoutube, IndexSubbomment, Pictures, voiceTitle, BananaPic, IndexSubbommentThoughtness, IndexCourseTitle, IndexCoursePeriod, IndexCourseComment, IndexCourseExp, textIdName, mainCouse } from "../common/Variable.js";
+import { IndexContents, IndexYoutube, IndexSubbomment, Pictures, voiceTitle, BananaPic, IndexSubbommentThoughtness, IndexCourseTitle, IndexCoursePeriod, IndexCourseComment, IndexCourseExp, textIdName, mainCouse, LineBtnText } from "../common/Variable.js";
 
 const BASE_CLASS = "indexPage";
 
@@ -61,7 +61,7 @@ export class Index extends Component{
                   <img src="resource/Buchake_Phone.png" alt="mainComment" class="buchakePhone">
                 </div>
                 <div class="lineBtn">
-                  <a href="${this.LineLink}"><button class="lineBtn"><p class="font_p_m fontWaitBold">LINEで相談！</p></button></a></div>
+                  <a href="${this.LineLink}"><button class="lineBtn"><p class="font_p_m fontWaitBold">${LineBtnText}</p></button></a></div>
               </div>
               <div class="mainPic">
                 <img src="resource/Tsukamoto-san.png" alt="mainPic">

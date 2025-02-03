@@ -12,13 +12,27 @@ export const BananaPic = [
   `<img src="../resource/Speech\ bubble.svg" alt="banana" style="height: 50px;" class="bananaTalking">`
 ]
 
+//Common Btn LINE/Youtube
+//export const LineBtnText = `LINEで相談！`
+export const LineBtnText = `Consult via LINE!`
+//export const YoutubeBtnText = `Youtube チャンネルはこちら`
+export const YoutubeBtnText = `YouTube channel`
+
 //Header and Footer
-export const NavTitle = [
+/* export const NavTitle = [
   `ホーム`,
   `コース`,
   `乗客の声`,
   `自己紹介`,
   `ブログ`
+]
+ */
+export const NavTitle = [
+  `Home`,
+  `Course`,
+  `Passenger testimonials`,
+  `About me`,
+  `Blog`
 ]
 
 //Index variables
