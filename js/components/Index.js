@@ -1,5 +1,5 @@
 import { Component } from "../common/component.js";
-import { IndexContents, IndexYoutube, IndexSubbomment, Pictures, voiceTitle, BananaPic, IndexSubbommentThoughtness, IndexCourseTitle, IndexCoursePeriod, IndexCourseComment, IndexCourseExp, textIdName, mainCouse, LineBtnText, YoutubeBtnText } from "../common/Variable.js";
+import { IndexContents, IndexYoutube, IndexSubbomment, Pictures, voiceTitle, BananaPic, IndexSubbommentThoughtness, IndexCourseTitle, IndexCoursePeriod, IndexCourseComment, IndexCourseExp, textIdName, mainCouse, LineBtnText, YoutubeBtnText, BuchakePhone, BuchakePC } from "../common/Variable.js";
 
 const BASE_CLASS = "indexPage";
 
@@ -57,8 +57,8 @@ export class Index extends Component{
             eachContents = $(
               `<div class="comments">
                 <div class="mainComment">
-                  <img src="resource/buchake.png" alt="mainComment" class="buchakePC">
-                  <img src="resource/Buchake_Phone.png" alt="mainComment" class="buchakePhone">
+                  <img src=${BuchakePC} alt="mainComment" class="buchakePC">
+                  <img src=${BuchakePhone} alt="mainComment" class="buchakePhone">
                 </div>
                 <div class="lineBtn">
                   <a href="${this.LineLink}"><button class="lineBtn"><p class="font_p_m fontWaitBold">${LineBtnText}</p></button></a></div>
@@ -74,7 +74,7 @@ export class Index extends Component{
             eachContents = $(
               `<div class="courseContainer">
                 <div class="CourseTitle">
-                  <p class="font_p_xl fontWaitBold">コース</p>
+                  <p class="font_p_xl fontWaitBold">${IndexContents[2]}</p>
                 </div>
                 <div class="CourseListContainer">
                   <div class="CourseList"></div>
@@ -91,9 +91,9 @@ export class Index extends Component{
 
               //to change the period background
               let periodColor = "";
-              if(IndexCoursePeriod[i]==="12ヶ月コース"){
+              if(IndexCoursePeriod[i]==="12-Month Course"){
                 periodColor = "coursePeriodColorB";
-              } else if(IndexCoursePeriod[i]==="6ヶ月コース"){
+              } else if(IndexCoursePeriod[i]==="6-Month Course"){
                 periodColor = "coursePeriodColorG";
               }
               let courseContents = $(
@@ -182,7 +182,7 @@ export class Index extends Component{
             eachContents = $(
               `<div class="voiceContainer">
                 <div class="titleContainer">
-                  <p class="font_p_xl fontWaitBold">乗客の声</p>
+                  <p class="font_p_xl fontWaitBold">Passenger testimonials</p>
                   ${BananaPic[6]}
                 </div>
                 <div class="cardContainer"></div>

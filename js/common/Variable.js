@@ -64,7 +64,8 @@ export const IndexYoutube = [
   `<iframe width="560" height="300" src="https://www.youtube.com/embed/d8lP8RyGC2w?si=cL-ZJ1_6tsGXXw67" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
   `<iframe width="560" height="300" src="https://www.youtube.com/embed/uJUhbkLYy0Y?si=VbJ6uehqiY0hOBbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`
 ]
-
+export const BuchakePC = `resource/buchakeEng.png`;
+export const BuchakePhone = `resource/Buchake_PhoneEng.png`;
 /* export const IndexCourseTitle = [
   `デトックス英会話<br>&lt; First Class &gt;`,
   `デトックス英会話<br>&lt; Business Class &gt;`,
@@ -106,16 +107,28 @@ export const IndexCourseComment = [
   `Group Work Focus`
 ];
 /* 0:title, 1:comment 2:ReadMore 3:img */
-export const IndexSubbommentThoughtness = [
+/* export const IndexSubbommentThoughtness = [
   `想い`,
   `わたしたちは生まれる前から<br>何をしに来たのか決めているとも言われます。<br>でも、子どもから大人になる間に色んな経験をして、<br>小さな諦めの中、それが何だったか忘れて来ます。...`,
   `Read more &gt;`,
   `<img src="resource/indexCantera.png" alt="plant">`
+] */
+export const IndexSubbommentThoughtness = [
+  `Thoughts`,
+  `It is said that we decide what we are here to do even before we are born.<br>But as we grow from childhood to adulthood, we have many different experiences and, in a small moment of resignation, we forget w...`,
+  `Read more &gt;`,
+  `<img src="resource/indexCantera.png" alt="plant">`
 ]
 /* 0:title, 1:comment 2:ReadMore 3:img */
-export const IndexSubbomment = [
+/* export const IndexSubbomment = [
   `その想いはどこから？`,
   `わたしは４歳の時から植物が好きでした。きっかけは園長先生がわたしにワタの木の苗をくれたところから始まります。<br>それから色んなものを育てるようになり、園芸店に行くのが大好きでした。...`,
+  `Read more &gt;`,
+  `<img src="resource/indexPlant.png" alt="plant">`
+] */
+export const IndexSubbomment = [
+  `Where does that thought come from?`,
+  `It is said that we decide what we are coming to do even before we are born.<br>However, as we grow from children to adults, we go through various...`,
   `Read more &gt;`,
   `<img src="resource/indexPlant.png" alt="plant">`
 ]
