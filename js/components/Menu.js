@@ -34,11 +34,19 @@ export class Menu extends Component{
         let hideFirst = "";
         //to change the period background
         let periodColor = "";
-        if(mainCousesPeriod[i]==="12ヶ月コース"){
+/*         if(mainCousesPeriod[i]==="12ヶ月コース"){
           periodColor = "coursePeriodColorB";
         } else if(mainCousesPeriod[i]==="6ヶ月コース"){
           periodColor = "coursePeriodColorG";
         } else if(mainCousesPeriod[i]==="サブスクコース"){
+          periodColor = "coursePeriodColorR";
+          hideFirst = "hide";
+        } */
+        if(mainCousesPeriod[i]==="12-Month Course"){
+          periodColor = "coursePeriodColorB";
+        } else if(mainCousesPeriod[i]==="6-Month Course"){
+          periodColor = "coursePeriodColorG";
+        } else if(mainCousesPeriod[i]==="Subscription Course"){
           periodColor = "coursePeriodColorR";
           hideFirst = "hide";
         }
