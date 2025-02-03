@@ -9,10 +9,10 @@ export class Voice extends Component{
         <div class="VoiceCardContainer">
         </div>
         <div class="GoogleReview">
-          <h3 class="GoogleReviewTitle">Google レビュー</h3>
+          <h3 class="GoogleReviewTitle">Google Reviews</h3>
           <div class="GoogleReviewContainer"></div>
           <div class="showMore">
-          <a href="${this.GoogleReview}"><button class="showMoreBtn"><p class="font_p_L fontWaitBold">もっと見る</p></button></a>
+          <a href="${this.GoogleReview}"><button class="showMoreBtn"><p class="font_p_L fontWaitBold">Read more</p></button></a>
           </div>
         </div>
       </section>`
