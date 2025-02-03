@@ -173,7 +173,7 @@ export const Pictures = [
   `<iframe width="560" height="315" src="https://www.youtube.com/embed/dfyB0Pyxo14?si=k7MwICbhFP1UfR-x" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`,
   `../resource/B_coming-soon.png`
 ];
-export const voiceTitle = [
+/* export const voiceTitle = [
   "4人のママで電気工事現場監督（神奈川）",
   "アパレルデザイナー & スタイリスト（京都＆広島）",
   `２児のママ兼OL（兵庫）`,
@@ -186,8 +186,22 @@ export const voiceTitle = [
   "アロマ商材販売（神奈川在住）",
   "リンパマッサージサロン経営（東京）",
   "Coming soon..."
+] */
+export const voiceTitle = [
+  "A mother of four and an electrical construction site supervisor (Kanagawa)",
+  "Apparel Designer & Stylist (Kyoto & Hiroshima)",
+  `Working Mom with Two Kids & OL (Hyogo)`,
+  `Florist (Kumamoto)`,
+  "Pilates Studio Owner (Fukuoka)",
+  "Ramen Shop Owners (Tokyo)",
+  "EC Sales Agency (Kanagawa)",
+  "Sales Support OL (Kobe)",
+  "Patisserie Owner (Kumamoto)",
+  "Aroma Product Sales (Living in Kanagawa)",
+  "Lymph Massage Salon Owner (Tokyo)",
+  "Coming soon..."
 ]
-export const customerVoice = [
+/* export const customerVoice = [
   "子育て真っ最中だが、次の人生に踏み出そうと英語を開始！一緒...",
   "とにかく何か踏み出したい！ということ...",
   `英語が好きだったことを思い出させてくれたあっきー...`,
@@ -200,8 +214,22 @@ export const customerVoice = [
   "あっきーは天使みたいだな、ってよく思います。...",
   "",
   ""
+] */
+export const customerVoice = [
+  "Currently in the midst of raising kids, but has started learni...",
+  "Wanting to take a step forward in any way possible, I starte...",
+  `Aki helped me remember my love for English! I used to l...`,
+  `I still disliked English since high school, but I can now nat...`,
+  "I couldn't hear any English at all, but within a month, I st...",
+  "",
+  "",
+  "I wish I had learned so many things in school!...",
+  "",
+  "I often think Aki is like an angel. I can't quite tell their ge...",
+  "",
+  ""
 ]
-export const customerVoiceFull = [
+/* export const customerVoiceFull = [
   "子育て真っ最中だが、次の人生に踏み出そうと英語を開始！一緒に渡豪もし、どんどん才能開花中！",
   "とにかく何か踏み出したい！ということで英語を始めたら、転職が起こるわ息子も英語が話せるようになるわミラクルいっぱいです！",
   `英語が好きだったことを思い出させてくれたあっきー 中学の時好きだった英語が怖くなり勉強も嫌になっていました 軽い気持ちで再開したら『こんなはずじゃなかった』 『こんなこともわからないなんて悔しい』 そんな気持ちが出たり入ったりしながら続けていくうちに 不思議と面白く感じるようになった、 逃げていた英語に飛び込んでみたい！ってゆうきまで出てきました そしてそれは英語だけじゃなく他の生活にも影響を与えていて 自分の想像してないことが起こり初めてワクワクしています！`,
@@ -214,12 +242,32 @@ export const customerVoiceFull = [
   "あっきーは天使みたいだな、ってよく思います。性別も年齢もよくわかんないし笑世界中飛び回ってるしね笑 最初は英会話を通して、私が気づかずに抱えている 「英会話が上達しない罠」の存在をわかりやすく教えてくれました。あっきーがよく言う「呪い」ってやつですね。実は呪いは英語に限った話ではなくて。 人間関係やお金、健康などにも通じることなんです。英会話の練習をしているつもりが、いつの間にか人生を開花させるコーチングになっている。そんなセッションがよくあります。今はむしろ英会話がおまけみたいな感じ笑 私たちにかかっている「呪い」や そこにあるのに見えていない「鎖」をひらりとやってきて「ここにあるんじゃない？どうする？」ってそっと教えて去っていく、そんなAngelのようなあっきーといちどお話ししてみてくださいね♪",
   "",
   ""
+] */
+export const customerVoiceFull = [
+  "Currently in the midst of raising kids, but has started learning English to step into the next chapter of life! Also planning to move to Australia, with talents blooming more and more!",
+  "Wanting to take a step forward in any way possible, I started learning English, and then suddenly, a career change happened! My son is also becoming fluent in English, and it's been full of miracles!",
+  `Aki helped me remember my love for English! I used to love English in middle school, but it became scary, and I grew to dislike studying it. When I casually started again, I thought, 'This isn't how it was supposed to be.'I can't believe I don't understand this; it's frustrating.' Those feelings came and went, but as I continued, I strangely found it interesting and wanted to dive back into the English I had been avoiding! This change has affected not just my English, but other aspects of my life, and I'm starting to feel excited about things I never imagined!"`,
+  "I still disliked English since high school, but I can now naturally send chats and voice messages in English.",
+  "I couldn't hear any English at all, but within a month, I started to understand it. Every day felt like living abroad.",
+  "",
+  "",
+  `I wish I had learned so many things in school! With daily exposure to English, it becomes second nature. Then, the desire to speak more grows.It's also interesting that while doing English, my world is expanding beyond just English.It's full of surprises!`,
+  "",
+  `I often think Aki is like an angel. I can't quite tell their gender or age, and they're always flying around the world, haha.Initially, through English conversation, they clearly explained the existence of the 'trap of not improving in English' that I didn't even realize I was stuck in. It's the 'curse' that Aki often mentions.In reality, this curse isn't just about English. It connects to relationships, money, health, and more.What I thought was practice for conversation has unexpectedly turned into coaching that blossoms my life. These sessions often feel like English conversation is just a bonus, haha.Aki is like an angel who gracefully comes to us, gently pointing out the 'chains' we can't see but that bind us, asking, 'Aren't these here? What will you do?' I recommend talking with Aki at least once!`,
+  "",
+  ""
 ]
-export const googleReviews = [
+/* export const googleReviews = [
   `../resource/GoogleReview1JP.png`,
   `../resource/GoogleReview2JP.png`,
   `../resource/GoogleReview3JP.png`,
   `../resource/GoogleReview4JP.png`,
+] */
+export const googleReviews = [
+  `../resource/GoogleReview1Eng.png`,
+  `../resource/GoogleReview2Eng.png`,
+  `../resource/GoogleReview3Eng.png`,
+  `../resource/GoogleReview4Eng.png`,
 ]
 
 //About variables
