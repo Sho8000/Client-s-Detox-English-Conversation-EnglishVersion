@@ -71,7 +71,7 @@
 }
 #Menu .Menu__mainCouse .Menu__mainCouse__card .Menu__mainCouse__card__courseCardContainer .Menu__mainCouse__card__courseCard .talkingBNN img {
   position: absolute;
-  top: -60%;
+  top: -100%;
   left: -12%;
   transform: rotate(-9deg);
 }
