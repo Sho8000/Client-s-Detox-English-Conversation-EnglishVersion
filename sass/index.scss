@@ -331,7 +331,7 @@ main{
               position: absolute;
               z-index: 2;
               bottom: 40px;
-              width: 142px;
+              width: 166px;
               line-height: 45px;
               border-radius: 5px;
               background-color: $LineBG;
@@ -371,13 +371,14 @@ main{
                 display: flex;
                 justify-content: space-between;
                 .courseCard{
-                  width: 300px;
-                  height: 320px;
+                  min-width: 300px;
+                  height: auto;
                   background-color: #FCFCFC;
                   border-radius: 10px;
                   position: relative;
                   .cTitle{
                     text-align: center;
+                    padding-top: 1rem;
                   }
                   .cPeriod{
                     width: fit-content;
@@ -404,9 +405,12 @@ main{
                   }
                   .Banana{
                     position: absolute;
-                    top: -5%;
+                    top: -7%;
                     left: -15%;
                     transform: rotate(-10deg);
+                    img{
+                      padding-top: 4px;
+                    }
                   }
                 }
               }  
@@ -628,7 +632,7 @@ main{
                 position: absolute;
                 z-index: 2;
                 bottom: -200px;
-                width: 142px;
+                width: 166px;
                 line-height: 45px;
                 border-radius: 5px;
                 background-color: $LineBG;
@@ -720,8 +724,8 @@ main{
                   row-gap: 30px;
                   margin: 0 4rem;
                   .courseCard{
-                    width: 300px;
-                    height: 320px;
+                    min-width: 300px;
+                    height: auto;
                     background-color: #FCFCFC;
                     border-radius: 10px;
                     position: relative;
@@ -820,7 +824,7 @@ main{
                   }
                   .Banana{
                     position: absolute;
-                    top: -5%;
+                    top: -10%;
                     left: -15%;
                     transform: rotate(-10deg);
                   }

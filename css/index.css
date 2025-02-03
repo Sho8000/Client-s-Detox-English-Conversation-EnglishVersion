@@ -306,7 +306,7 @@ main {
   position: absolute;
   z-index: 2;
   bottom: 40px;
-  width: 142px;
+  width: 166px;
   line-height: 45px;
   border-radius: 5px;
   background-color: #00B800;
@@ -346,14 +346,15 @@ main {
   justify-content: space-between;
 }
 #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard {
-  width: 300px;
-  height: 320px;
+  min-width: 300px;
+  height: auto;
   background-color: #FCFCFC;
   border-radius: 10px;
   position: relative;
 }
 #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .cTitle {
   text-align: center;
+  padding-top: 1rem;
 }
 #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .cPeriod {
   width: fit-content;
@@ -378,9 +379,12 @@ main {
 }
 #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .Banana {
   position: absolute;
-  top: -5%;
+  top: -7%;
   left: -15%;
   transform: rotate(-10deg);
+}
+#app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard .Banana img {
+  padding-top: 4px;
 }
 #app main #indexPage__contents .indexPage__container .Course .courseContainer .courseContainerReadMore {
   margin-top: 48px;
@@ -573,7 +577,7 @@ main {
     position: absolute;
     z-index: 2;
     bottom: -200px;
-    width: 142px;
+    width: 166px;
     line-height: 45px;
     border-radius: 5px;
     background-color: #00B800;
@@ -658,8 +662,8 @@ main {
     margin: 0 4rem;
   }
   #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseListContainer .CourseList .courseCard {
-    width: 300px;
-    height: 320px;
+    min-width: 300px;
+    height: auto;
     background-color: #FCFCFC;
     border-radius: 10px;
     position: relative;
@@ -742,7 +746,7 @@ main {
   }
   #app main #indexPage__contents .indexPage__container .Course .courseContainer .CourseList .courseCard .Banana {
     position: absolute;
-    top: -5%;
+    top: -10%;
     left: -15%;
     transform: rotate(-10deg);
   }
